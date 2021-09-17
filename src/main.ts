@@ -1,12 +1,9 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+let width : number;
+let height : number;
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+width = 10.5;
+height = 20;
 
-if (environment.production) {
-  enableProdMode();
-}
+let area: number = width*height;
+console.log(`dien tich hinh chu nhat: ${area}`);
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
